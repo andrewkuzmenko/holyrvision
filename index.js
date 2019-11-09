@@ -60,14 +60,14 @@ if(canKillBots.length) {
 } else {
   // валим в рандом
   if (rand()) {
-    x = rand() ? x + maxDistance : x - maxDistance;
+    x = rand() ? x + 1 : x - 1;
     if (x <= 0) {
       x += 1;
     } else if (x >= API.getArenaSize() - 1) {
       x -= 1;
     }
   } else {
-    y = rand() ? y + maxDistance : y - maxDistance;
+    y = rand() ? y + 1 : y - 1;
     if (y <= 0) {
       y += 1;
     } else if (y >= API.getArenaSize() - 1) {
